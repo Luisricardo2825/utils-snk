@@ -1,4 +1,4 @@
-package com.luisricardo2825.json;
+package com.sankhya.ce.json;
 
 import com.google.gson.Gson;
 import org.json.JSONArray;

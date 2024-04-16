@@ -1,4 +1,4 @@
-package com.luisricardo2825.commons.tuples;
+package com.sankhya.ce.commons.tuples;
 
 public class Pair<L, R> {
     private L left;

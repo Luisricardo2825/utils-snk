@@ -1,4 +1,4 @@
-package com.luisricardo2825.jape;
+package com.sankhya.ce.jape;
 
 import br.com.sankhya.jape.core.JapeSession;
 import br.com.sankhya.jape.vo.DynamicVO;

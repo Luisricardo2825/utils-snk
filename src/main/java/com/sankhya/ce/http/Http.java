@@ -1,9 +1,9 @@
-package com.luisricardo2825.http;
+package com.sankhya.ce.http;
 
 import br.com.sankhya.ws.ServiceContext;
 import com.google.gson.Gson;
-import com.luisricardo2825.commons.tuples.Pair;
-import com.luisricardo2825.commons.tuples.Triple;
+import com.sankhya.ce.commons.tuples.Pair;
+import com.sankhya.ce.commons.tuples.Triple;
 import okhttp3.*;
 import okhttp3.internal.http.RealResponseBody;
 import okio.GzipSource;
