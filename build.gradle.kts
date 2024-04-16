@@ -1,29 +1,29 @@
 plugins {
     id("java")
     id("application")
-    id("maven-publish")
+//    id("maven-publish")
 }
 application {
     applicationDefaultJvmArgs = listOf("-Djava.awt.headless=true")
     applicationName = "UtilsSNK"
 }
-publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Luisricardo2825/UtilsSNK")
-            credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
-            }
-        }
-    }
-    publications {
-        register<MavenPublication>("gpr") {
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    repositories {
+//        maven {
+//            name = "GitHubPackages"
+//            url = uri("https://maven.pkg.github.com/Luisricardo2825/UtilsSNK")
+//            credentials {
+//                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
+//                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+//            }
+//        }
+//    }
+//    publications {
+//        register<MavenPublication>("gpr") {
+//            from(components["java"])
+//        }
+//    }
+//}
 
 group = "com.sankhya.ce"
 version = "1.0-snapshot"
@@ -47,6 +47,7 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
 }
+
 
 
 tasks {
