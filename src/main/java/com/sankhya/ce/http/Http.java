@@ -1,14 +1,14 @@
-package com.sankhya.ce.http;
+package com.luisricardo2825.http;
 
 import br.com.sankhya.ws.ServiceContext;
 import com.google.gson.Gson;
+import com.luisricardo2825.commons.tuples.Pair;
+import com.luisricardo2825.commons.tuples.Triple;
 import okhttp3.*;
 import okhttp3.internal.http.RealResponseBody;
 import okio.GzipSource;
 import okio.InflaterSource;
 import okio.Okio;
-import org.apache.commons.lang3.tuple.Pair;
-import org.apache.commons.lang3.tuple.Triple;
 
 import javax.servlet.http.Cookie;
 import java.io.IOException;

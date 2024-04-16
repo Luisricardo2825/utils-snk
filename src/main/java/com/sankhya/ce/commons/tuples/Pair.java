@@ -1,4 +1,4 @@
-package com.sankhya.ce.commons.tuples;
+package com.luisricardo2825.commons.tuples;
 
 public class Pair<L, R> {
     private L left;
@@ -14,7 +14,7 @@ public class Pair<L, R> {
         return "Pair(" + left + ", " + right + ")";
     }
 
-    public Pair<L, R> of(L left, R right) {
+    public static <L, R>  Pair<L, R> of(L left, R right) {
         return new Pair<>(left, right);
     }
 

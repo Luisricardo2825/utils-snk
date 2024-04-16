@@ -1,4 +1,4 @@
-package com.sankhya.ce.commons.tuples;
+package com.luisricardo2825.commons.tuples;
 
 public class Triple<L, M, R> {
     private final L left;
@@ -24,7 +24,7 @@ public class Triple<L, M, R> {
         return right;
     }
 
-    public Triple<L, M, R> of(L left, M middle, R right) {
+    public static <L, M, R> Triple<L, M, R> of(L left, M middle, R right) {
         return new Triple<>(left, middle, right);
     }
 
