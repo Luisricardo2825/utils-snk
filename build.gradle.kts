@@ -24,7 +24,7 @@ publishing {
 }
 
 group = "com.sankhya.ce"
-version = "1.0-snapshot"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -50,8 +50,8 @@ java {
 
 tasks {
     jar {
-        archiveBaseName.set("UtilsSNK")
-        archiveVersion.set("1.0-snapshot")
+        archiveBaseName.set("utils_snk")
+        archiveVersion.set("1.0.1")
         dependencies {
             implementation(fileTree("libs"))
         }
