@@ -9,7 +9,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/Luisricardo2825/UtilsSNK")
+            url = uri("https://maven.pkg.github.com/luisricardo2825/utilssnk")
             credentials {
                 username = System.getenv("USERNAME")
                 password = System.getenv("TOKEN")
