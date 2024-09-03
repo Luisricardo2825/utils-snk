@@ -4,12 +4,11 @@ plugins {
     `maven-publish`
 
 }
-
 publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/luisricardo2825/utilssnk")
+            url = uri("https://maven.pkg.github.com/luisricardo2825/utils-snk")
             credentials {
                 username = System.getenv("USERNAME")
                 password = System.getenv("TOKEN")
@@ -50,7 +49,7 @@ java {
 
 tasks {
     jar {
-        archiveBaseName.set("utils_snk")
+        archiveBaseName.set("utils-snk")
         archiveVersion.set("1.0.1")
         dependencies {
             implementation(fileTree("libs"))
