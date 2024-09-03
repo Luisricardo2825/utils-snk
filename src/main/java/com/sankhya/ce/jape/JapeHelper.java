@@ -122,7 +122,7 @@ public class JapeHelper {
             hnd = JapeSession.open();
             JapeWrapper instanciaDAO = JapeFactory.dao(instancia);
             dynamicVo = instanciaDAO.findOne(where);
-        } catch (java.lang.Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             throw new MGEModelException("Erro getVO: " + e.getMessage());
         } finally {
@@ -158,7 +158,7 @@ public class JapeHelper {
             hnd = JapeSession.open();
             JapeWrapper instanciaDAO = JapeFactory.dao(instancia);
             dynamicVo = instanciaDAO.find(where);
-        } catch (java.lang.Exception e) {
+        } catch (Exception e) {
             throw new MGEModelException("Erro getVO: " + e.getMessage());
         } finally {
             JapeSession.close(hnd);

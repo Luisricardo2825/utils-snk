@@ -2,7 +2,6 @@ plugins {
     id("java")
     id("application")
     `maven-publish`
-
 }
 
 publishing {
@@ -11,8 +10,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/Luisricardo2825/UtilsSNK")
             credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") as String? ?: System.getenv("TOKEN")
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("GPRUSER")
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("GPRKEY")
             }
         }
     }
